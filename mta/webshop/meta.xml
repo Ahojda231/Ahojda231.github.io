@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <info author="MTA-WEB" name="webshop" version="1.0.0" type="script" description="Grants items purchased on web via exports.global:giveItem" />
+
+  <script src="server.lua" type="server" />
+
+  <oop false="true" />
+
+  <min_mta_version server="1.5.9" />
+
+  <file src="config.lua" />
+  <file src="config.lua.example" />
+
+  <settings>
+    <!-- Optional: you can keep credentials only in config.lua and ignore these settings -->
+    <setting name="*pollIntervalMs" value="5000" friendlyname="Poll interval (ms)" group="webshop" />
+    <setting name="*batchSize" value="10" friendlyname="Batch size per tick" group="webshop" />
+    <setting name="*characterIdElementData" value="dbid" friendlyname="Element data key for character ID" group="webshop" />
+    <setting name="*fallbackToDBInsert" value="true" friendlyname="Fallback to direct DB insert when player offline" group="webshop" />
+  </settings>
+</meta>
